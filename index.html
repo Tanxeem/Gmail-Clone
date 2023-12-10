@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Gmail</title>
+</head>
+<body>
+    <!-- ========== Start NAVBAR ========== -->
+        <nav class="h-[50px] flex items-center">
+
+            <!-- log side  -->
+
+            <div class="flex items-center gap-2 me-20 ">
+                <i class="cursor-pointer fa-solid fa-bars" style="color: #9ca3b0;"></i>
+                <img src="images/Gmail-Logo.png" alt="" class="w-12 h-7 cursor-pointer">
+                <span class="text-[25px] font-semibold ">Gmail</span>
+            </div>
+            <div class="flex justify-between w-full">
+                <!-- search bar  -->
+                <div>
+                    <form action="" class="border h-[40px] rounded-[30px] flex items-center p-4 bg-slate-100">
+                        <i class="cursor-pointer fa-solid fa-magnifying-glass me-2 hover:bg-slate-200 hover:rounded-full"></i>
+                    <input class="w-[600px] bg-slate-100" type="search" placeholder="Search mail">
+                    <i class="cursor-pointer fa-solid fa-not-equal"></i>
+                </form>
+                </div>
+
+                <!-- login bar -->
+
+                <div class="flex gap-4 items-center">
+                    <i class="cursor-pointer fa-regular fa-circle-question"></i>
+                    <i class="cursor-pointer fa-solid fa-gear"></i>
+                    <i class="cursor-pointer fa-solid fa-grip"></i>
+                    <img src="images/profile.jpeg" alt=""
+                    class="cursor-pointer h-10 w-10 rounded-full">
+
+                </div>
+
+            </div>
+        </nav>
+    <!-- ========== End NAVBAR ========== -->
+    
+    <!-- ========== Start MAIN Section ========== -->
+    
+    <div class="pt-5 flex">
+
+        <!-- left side  -->
+        <div class="w-[230px] h-[380px] justify-between flex flex-col">
+            <button class="bg-slate-300 rounded-md p-3 w-[150px]">
+                <i class="fa-solid fa-pencil"></i>
+                <span class="font-semibold px-3">Compose</span>
+            </button>
+            <div class="gap-3 flex flex-col font-medium">
+                <div class=" hover:bg-slate-100 hover:rounded-xl p-[3px]">
+                    <i class="fa-solid fa-inbox"></i>
+                    <span class="p-5">Inbox</span>
+                </div>
+                <div class=" hover:bg-slate-100 hover:rounded-xl p-[3px]">
+                    <i class="fa-regular fa-star"></i>
+                    <span class="p-5">Starred</span>
+                </div>
+                <div class=" hover:bg-slate-100 hover:rounded-xl p-[3px]">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="p-5">Snoozed</span>
+                </div>
+                <div class=" hover:bg-slate-100 hover:rounded-xl p-[3px]">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span class="p-5">Sent</span>
+                </div>
+                <div class=" hover:bg-slate-100 hover:rounded-xl p-[3px]">
+                    <i class="fa-regular fa-file"></i>
+                    <span class="p-5">Drafts</span>
+                </div>
+                <div class=" hover:bg-slate-100 hover:rounded-xl p-[3px]">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span class="p-5">More</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <h2 class="text-lg font-semibold">Labels</h2>
+                <i class="fa-solid fa-plus pe-3"></i>
+            </div>
+
+        </div>
+        <!-- center side  -->
+        <div class="ps-7 pe-4 w-screen max-h-screen bg-white rounded-3xl overflow-hidden ">
+            <!-- 1st row  -->
+            <div class="flex items-center justify-between pb-3">
+            <div class="flex gap-4">
+                <i class="fa-regular fa-square"></i>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="flex items-center gap-4">
+                <h3>1-50 of 200</h3>
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-keyboard"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+
+            <div class="flex pb-2">
+                <div class="w-[220px] h-[40px] font-bold cursor-pointer border-b-4 border-b-blue-600 me-4">
+                    <i class="fa-solid fa-inbox"></i>
+                    <span class="p-5">Primary</span>
+                </div>
+                <div class="w-[230px] h-[40px] font-bold cursor-pointer border-b-4 border-b-blue-600 me-4">
+                    <i class="fa-solid fa-tag"></i>
+                    <span class="p-5">Promotions</span>
+                </div>
+                <div class="w-[230px] h-[40px] font-bold cursor-pointer border-b-4 border-b-blue-600">
+                    <i class="fa-regular fa-user-group"></i>
+                    <span class="p-5">Social</span>
+                </div>
+    
+            </div>
+            <!-- email  -->
+            <div class="flex flex-col gap-4 mt-2 snap-y">
+                <!-- email 1  -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 2 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 3 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 4 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 5 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 6 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 7 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 8 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 9 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 10 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 11 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 12 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 13 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 14 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 15 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 16 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between  w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- email 17 -->
+
+                <div class="flex items-center ">
+                    <div class="flex gap-4 items-center w-[200px]">
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <h3>PW Skills</h3>
+                    </div>
+                    <div class="flex relative justify-between w-[100%]">
+                    <div>
+                        <p class="ps-[50px]">Join The Live Class Of Full Stack Web Development - Join The Live Class of Full Stack Web Development</p>
+                    </div>
+                    <div>
+                        <h3>17:09</h3>
+                    </div>
+                </div>
+                </div>
+
+                <!-- END Email -->
+
+            </div>
+
+        </div>
+        <!-- right side  -->
+        <div class="flex flex-col gap-[40px] items-center pt-5 border w-[60px]">
+            <i class="fa-solid fa-calendar-days fa-xl" style="color: green;" ></i>
+            <i class="fa-solid fa-lightbulb fa-xl" style="color: yellow;"></i>
+            <i class="fa-solid fa-circle-check fa-xl" style="color: #0656e0;"></i>
+            <i class="fa-solid fa-user fa-xl" style="color: #0656e0;"></i>
+            <i class="pt-10 fa-solid fa-plus fa-xl"></i>
+        </div>
+
+    </div>
+
+    <!-- ========== End MAIN Section ========== -->
+    
+
+</body>
+</html>
